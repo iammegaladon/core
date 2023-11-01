@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Close Tab</title>
+</head>
+<body>
+    <p>This page will open a new tab and close it after 2 seconds.</p>
+    <script>
+        // Open a new tab
+        const newTab = window.open("about:blank", "_blank");
+
+        // Close the new tab after 2 seconds
+        setTimeout(function() {
+            newTab.close();
+        }, 2000);
+    </script>
+</body>
+</html>

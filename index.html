@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Team Meg Corporation | Checking Enviroment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="assets/css/sec.css">
+<link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+<link rel="stylesheet" href="assets/css/vendor/slick.css">
+<link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+<link rel="stylesheet" href="assets/css/vendor/sal.css">
+<link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
+<div id="loader">
+  <div class="cube-folding">
+    <span class="leaf1"></span>
+    <span class="leaf2"></span>
+    <span class="leaf3"></span>
+    <span class="leaf4"></span>
+  </div>
+</div>
+ <!-- Site Scripts -->
+<!-- Url Rewriting Script -->
+ <script src="url_rewrite/index.js"></script>
+
+  <script>
+      // Function to check if the user is using Chrome
+      function isChrome() {
+          return /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+      }
+
+      // Delayed redirection after 6 seconds
+      setTimeout(function () {
+          if (isChrome()) {
+              // Redirect to security.html if using Chrome
+              window.location.href = "home.html";
+          } else {
+              // Redirect to home.html for non-Chrome users
+              window.location.href = "security.html";
+          }
+      }, 6000); // 6 seconds delay
+  </script>
