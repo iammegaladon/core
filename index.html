@@ -21,901 +21,184 @@
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="assets/css/app.css">
 
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin="">
+  <link rel="dns-prefetch" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=Nunito&amp;display=swap" rel="stylesheet">
+  <title>HTTP Version Not Supported</title>
+  <style>
+    :root {
+      --color-bg-primary: #fff;
+      --color-text-primary: #22292f;
+      --color-text-secondary: #606f7b;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg-primary: #212121;
+        --color-text-primary: #fafafa;
+        --color-text-secondary: #9db6cb;
+      }
+    }
+
+    html, body {
+      height: 100%;
+      line-height: 1.15;
+      text-size-adjust: 100%;
+      box-sizing: border-box;
+      font-family: Nunito, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      padding: 0;
+      background-color: var(--color-bg-primary);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+      border-style: none;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    main .left, main .right {
+      width: 100%;
+    }
+
+    main .left .container {
+      max-width: 30rem;
+      margin: 2rem;
+    }
+
+    main .left .container .code {
+      color: var(--color-text-primary);
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    main .left .container .space {
+      width: 4rem;
+      height: .25rem;
+      background-color: #a779e9;
+      margin-top: .75rem;
+      margin-bottom: .75rem;
+    }
+
+    main .left .container .description {
+      color: var(--color-text-secondary);
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    main .right {
+      height: 100%;
+    }
+
+    main .right .container {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      /*  */
+      /* https://github.com/LaravelCollective/errors/blob/8a0cf6fb73ba0041330967d3d6a137bd4509f7bd/src/publish/svg/500.svg */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 1024 1024'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23F6EDAE'/%3E%3Cstop offset='100%25' stop-color='%2391D4D7'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='49.87%25' x2='49.87%25' y1='3.62%25' y2='77.75%25'%3E%3Cstop offset='0%25' stop-color='%23B0DDF1'/%3E%3Cstop offset='100%25' stop-color='%23325C82'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' x1='100%25' x2='72.45%25' y1='0%25' y2='85.2%25'%3E%3Cstop offset='0%25' stop-color='%231D3A6D'/%3E%3Cstop offset='100%25' stop-color='%23467994'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' x1='54.81%25' x2='50%25' y1='-18.48%25' y2='59.98%25'%3E%3Cstop offset='0%25' stop-color='%23FFFFFF'/%3E%3Cstop offset='28.15%25' stop-color='%23F8E6B3'/%3E%3Cstop offset='100%25' stop-color='%23D5812F'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' x1='52.84%25' x2='49.87%25' y1='2.8%25' y2='77.75%25'%3E%3Cstop offset='0%25' stop-color='%23FFFFFF'/%3E%3Cstop offset='22.15%25' stop-color='%23F8E6B3'/%3E%3Cstop offset='100%25' stop-color='%23F9D989'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' x1='91.59%25' x2='66.97%25' y1='5.89%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23CE4014'/%3E%3Cstop offset='100%25' stop-color='%23FFD56E'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' x1='40.28%25' x2='66.37%25' y1='30.88%25' y2='108.51%25'%3E%3Cstop offset='0%25' stop-color='%23A2491E'/%3E%3Cstop offset='100%25' stop-color='%23F4B35A'/%3E%3C/linearGradient%3E%3Ccircle id='i' cx='825' cy='235' r='70'/%3E%3Cfilter id='h' width='237.1%25' height='237.1%25' x='-68.6%25' y='-68.6%25' filterUnits='objectBoundingBox'%3E%3CfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3E%3CfeGaussianBlur in='shadowOffsetOuter1' result='shadowBlurOuter1' stdDeviation='32'/%3E%3CfeColorMatrix in='shadowBlurOuter1' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3ClinearGradient id='j' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23B29959'/%3E%3Cstop offset='100%25' stop-color='%23CEAD5B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Crect width='1024' height='1024' fill='url(%23a)'/%3E%3Cpath fill='%23FFFFFF' d='M1024 378.13v39.37H790a71.59 71.59 0 0 1 21.14-50.8l1.36-1.34a31.93 31.93 0 0 1 45 0 31.93 31.93 0 0 0 45 0l15-14.9a53.21 53.21 0 0 1 75 0l22.5 22.35a21.2 21.2 0 0 0 9 5.32z' opacity='.15'/%3E%3Cg transform='translate(26 245)'%3E%3Cpath fill='url(%23b)' d='M289.12 450.57C312.22 464.04 263.85 532.52 144 656h649C448.94 514.3 280.98 445.83 289.12 450.57z'/%3E%3Cpath fill='url(%23c)' d='M262.5 402c-48 50 147.33 58.02 36 136.5-40.67 28.67 21.17 67.83 185.5 117.5H0l262.5-254z'/%3E%3Cpath fill='url(%23c)' d='M298.5 538.5C257.83 567.17 319.67 606.33 484 656H120l178.5-117.5z'/%3E%3C/g%3E%3Cpath fill='%23134F4E' d='M783 593.73a29.95 29.95 0 0 1-12-24c0-9.8 4.72-18.52 12-24-5.02 6.69-8 15-8 24 0 9.01 2.98 17.32 8 24z'/%3E%3Cg fill='%23134F4E' transform='matrix(-1 0 0 1 876 532)'%3E%3Cpath d='M24 66.73a29.95 29.95 0 0 1-12-24c0-9.8 4.72-18.52 12-24-5.02 6.69-8 15-8 24 0 9.01 2.98 17.32 8 24z'/%3E%3Cpath d='M36 22.4l-3.96-3.98a5 5 0 0 0-6.5-.5 3 3 0 0 1 3.7-3.55l8.7 2.33a8 8 0 0 1 5.66 9.8l-1-1.73a2 2 0 0 0-1.21-.93L36 22.4zm-5.38-2.56L37 26.2a8 8 0 0 1 0 11.32v-2a2 2 0 0 0-.6-1.42L26.39 24.08a3 3 0 0 1 4.24-4.24zM14.21 9.8l-3.94-3.94a2 2 0 0 0-1.42-.59h-2a8 8 0 0 1 11.32 0l6.36 6.37a3 3 0 0 1-1.22 4.98 5 5 0 0 0-3.68-5.37l-5.42-1.45zm4.9 3.39a3 3 0 1 1-1.55 5.8L3.87 15.31a2 2 0 0 0-1.52.2l-1.73 1a8 8 0 0 1 9.8-5.65l8.7 2.33z'/%3E%3C/g%3E%3Cg transform='translate(0 245)'%3E%3Cpath fill='url(%23d)' d='M1024 423.16V645H58.09c-32.12-75.17-32.12-123.84 0-146 48.17-33.24 127.17-64.25 293.33-64 166.17.25 246.67-105 413.33-105 117.33 0 183.93 55.8 259.25 93.16z'/%3E%3Cpath fill='url(%23e)' d='M1024 778H0V398.62C75.53 363.05 136.43 320 283 320c111.86 0 358.86 69.82 741 209.47V778z'/%3E%3Cpath fill='url(%23f)' d='M0 778V398.62C75.53 363.05 136.43 320 283 320c71.14 0 85.96 26.04 32.5 82-79.5 83.22 279.7 2.01 336 131.5 26 59.8-69.83 141.3-287.48 244.5H0z'/%3E%3Cpath fill='url(%23g)' d='M364.02 778H0V638.4L315.5 402c-79.5 83.22 279.7 2.01 336 131.5 26 59.8-69.83 141.3-287.48 244.5z'/%3E%3C/g%3E%3Cpath fill='%23134F4E' d='M795 549.4l-3.96-3.98a5 5 0 0 0-6.5-.5 3 3 0 0 1 3.7-3.55l8.7 2.33a8 8 0 0 1 5.66 9.8l-1-1.73a2 2 0 0 0-1.21-.93L795 549.4zm-5.38-2.56l6.37 6.36a8 8 0 0 1 0 11.32v-2a2 2 0 0 0-.6-1.42l-10.01-10.02a3 3 0 0 1 4.24-4.24zm-16.41-10.03l-3.94-3.94a2 2 0 0 0-1.42-.59h-2a8 8 0 0 1 11.32 0l6.36 6.37a3 3 0 0 1-1.22 4.98 5 5 0 0 0-3.68-5.37l-5.42-1.45zm4.9 3.39a3 3 0 1 1-1.55 5.8l-13.69-3.68a2 2 0 0 0-1.52.2l-1.73 1a8 8 0 0 1 9.8-5.65l8.7 2.33z'/%3E%3Cpath fill='%23FFFFFF' d='M395.67 116.48a9.46 9.46 0 0 1 13.33 0 9.46 9.46 0 0 0 13.33 0l13.33-13.24a28.39 28.39 0 0 1 40 0l10 9.93a14.2 14.2 0 0 0 20 0 14.2 14.2 0 0 1 20 0l.6.6a31.8 31.8 0 0 1 9.4 22.56H389v-3.84c0-6.01 2.4-11.78 6.67-16.01zM98.1 249.1l5.9-5.86c11.07-11 28.93-11 40 0l10 9.94a14.19 14.19 0 0 0 20 0 14.19 14.19 0 0 1 20 0 16.36 16.36 0 0 0 21.3 1.5l8.7-6.47a33.47 33.47 0 0 1 40 0l4.06 3.03A39.6 39.6 0 0 1 284 283H84a47.77 47.77 0 0 1 14.1-33.89z' opacity='.15'/%3E%3Cuse fill='black' filter='url(%23h)' xlink:href='%23i'/%3E%3Cuse fill='%23FFFFFF' xlink:href='%23i'/%3E%3Cpath fill='%23FFFFFF' d='M702.69 960.64a4.32 4.32 0 0 1-1.04 6.87c-2.26 1.2-3.69 2.1-4.27 2.67-.51.52-1.17 1.4-1.97 2.62a3.53 3.53 0 0 1-5.45.56 3.53 3.53 0 0 1 .56-5.44c1.23-.8 2.1-1.46 2.62-1.98.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.88-1.03z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M700.32 962a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25a3.53 3.53 0 0 1-3.45 4.25 3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9a4.32 4.32 0 0 1 4.13-5.6z' transform='rotate(45 700.323 971)'/%3E%3Cg transform='rotate(-15 3943.802 -2244.376)'%3E%3Cpath fill='%23FFFFFF' d='M16.65 3.9a4.32 4.32 0 0 1-1.03 6.87c-2.27 1.2-3.7 2.1-4.27 2.67-.52.52-1.18 1.4-1.98 2.62a3.53 3.53 0 0 1-5.44.56 3.53 3.53 0 0 1 .56-5.44c1.23-.8 2.1-1.46 2.62-1.98.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.87-1.03z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M13.32 5a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 13.32 23a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 13.32 5z' transform='rotate(45 13.323 14)'/%3E%3C/g%3E%3Cg transform='rotate(-15 4117.1 -2152.014)'%3E%3Cpath fill='%23FFFFFF' d='M16.65 3.9a4.32 4.32 0 0 1-1.03 6.87c-2.27 1.2-3.7 2.1-4.27 2.67-.52.52-1.18 1.4-1.98 2.62a3.53 3.53 0 0 1-5.44.56 3.53 3.53 0 0 1 .56-5.44c1.23-.8 2.1-1.46 2.62-1.98.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.87-1.03z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M13.32 5a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 13.32 23a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 13.32 5z' transform='rotate(45 13.323 14)'/%3E%3C/g%3E%3Cg transform='rotate(-15 4127.186 -2023.184)'%3E%3Cpath fill='%23FFFFFF' d='M16.65 3.9a4.32 4.32 0 0 1-1.03 6.87c-2.27 1.2-3.7 2.1-4.27 2.67-.52.52-1.18 1.4-1.98 2.62a3.53 3.53 0 0 1-5.44.56 3.53 3.53 0 0 1 .56-5.44c1.23-.8 2.1-1.46 2.62-1.98.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.87-1.03z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M13.32 5a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 13.32 23a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 13.32 5z' transform='rotate(45 13.323 14)'/%3E%3C/g%3E%3Cg transform='rotate(-30 2055.753 -866.842)'%3E%3Cpath fill='%23FFFFFF' d='M16.55 3.4a4.32 4.32 0 0 1-1.03 6.88c-2.27 1.2-3.7 2.1-4.27 2.67-.52.52-1.18 1.39-1.98 2.62a3.53 3.53 0 0 1-5.44.56 3.53 3.53 0 0 1 .56-5.44c1.23-.8 2.1-1.46 2.62-1.98.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.87-1.04z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M12.32 6a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 12.32 24a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 12.32 6z' transform='rotate(45 12.323 15)'/%3E%3C/g%3E%3Cg transform='rotate(-30 2046.995 -931.189)'%3E%3Cpath fill='%23FFFFFF' d='M16.55 3.4a4.32 4.32 0 0 1-1.03 6.88c-2.27 1.2-3.7 2.1-4.27 2.67-.52.52-1.18 1.39-1.98 2.62a3.53 3.53 0 0 1-5.44.56 3.53 3.53 0 0 1 .56-5.44c1.23-.8 2.1-1.46 2.62-1.98.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.87-1.04z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M12.32 6a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 12.32 24a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 12.32 6z' transform='rotate(45 12.323 15)'/%3E%3C/g%3E%3Cg transform='rotate(-45 1406.147 -409.132)'%3E%3Cpath fill='%23FFFFFF' d='M16.93 3.22a4.32 4.32 0 0 1-1.03 6.88c-2.27 1.2-3.7 2.09-4.27 2.67-.52.52-1.18 1.39-1.98 2.61a3.53 3.53 0 0 1-5.45.57 3.53 3.53 0 0 1 .57-5.45c1.22-.8 2.1-1.46 2.61-1.97.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.88-1.04z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M10.32 6a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 10.32 24a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 10.32 6z' transform='rotate(45 10.323 15)'/%3E%3C/g%3E%3Cg transform='rotate(-24 2389.63 -1296.285)'%3E%3Cpath fill='%23FFFFFF' d='M16.93 3.22a4.32 4.32 0 0 1-1.03 6.88c-2.27 1.2-3.7 2.09-4.27 2.67-.52.52-1.18 1.39-1.98 2.61a3.53 3.53 0 0 1-5.45.57 3.53 3.53 0 0 1 .57-5.45c1.22-.8 2.1-1.46 2.61-1.97.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.88-1.04z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M10.32 6a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 10.32 24a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 10.32 6z' transform='rotate(45 10.323 15)'/%3E%3C/g%3E%3Cg transform='rotate(-50 1258.425 -353.155)'%3E%3Cpath fill='%23FFFFFF' d='M16.93 3.22a4.32 4.32 0 0 1-1.03 6.88c-2.27 1.2-3.7 2.09-4.27 2.67-.52.52-1.18 1.39-1.98 2.61a3.53 3.53 0 0 1-5.45.57 3.53 3.53 0 0 1 .57-5.45c1.22-.8 2.1-1.46 2.61-1.97.58-.58 1.47-2 2.67-4.27a4.32 4.32 0 0 1 6.88-1.04z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M10.32 6a4.32 4.32 0 0 1 4.13 5.6c-.75 2.45-1.13 4.08-1.13 4.9 0 .73.15 1.81.45 3.25A3.53 3.53 0 0 1 10.32 24a3.53 3.53 0 0 1-3.45-4.25c.3-1.44.45-2.52.45-3.25 0-.82-.37-2.45-1.13-4.9A4.32 4.32 0 0 1 10.32 6z' transform='rotate(45 10.323 15)'/%3E%3C/g%3E%3Cg transform='rotate(-35 1652.744 -777.703)'%3E%3Cpath fill='%23FFFFFF' d='M16.08 3.06a4.1 4.1 0 0 1-.98 6.53c-2.15 1.14-3.5 1.99-4.05 2.54-.5.5-1.12 1.32-1.88 2.49a3.35 3.35 0 0 1-5.18.53 3.35 3.35 0 0 1 .54-5.17c1.16-.76 2-1.39 2.48-1.88.55-.55 1.4-1.9 2.54-4.06a4.1 4.1 0 0 1 6.53-.98z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M9.8 5.7a4.1 4.1 0 0 1 3.93 5.31c-.71 2.33-1.07 3.89-1.07 4.67 0 .69.14 1.72.43 3.08A3.35 3.35 0 0 1 9.8 22.8a3.35 3.35 0 0 1-3.28-4.04c.28-1.36.43-2.39.43-3.09 0-.77-.36-2.33-1.08-4.66A4.1 4.1 0 0 1 9.81 5.7z' transform='rotate(45 9.807 14.25)'/%3E%3C/g%3E%3Cg transform='rotate(-35 1605.77 -758.112)'%3E%3Cpath fill='%23FFFFFF' d='M15.24 2.9a3.89 3.89 0 0 1-.93 6.19c-2.04 1.08-3.33 1.88-3.85 2.4a15.6 15.6 0 0 0-1.78 2.36 3.17 3.17 0 0 1-4.9.5 3.17 3.17 0 0 1 .51-4.9 15.6 15.6 0 0 0 2.36-1.78c.52-.52 1.32-1.8 2.4-3.84a3.89 3.89 0 0 1 6.19-.93z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M9.3 5.4a3.89 3.89 0 0 1 3.7 5.03c-.67 2.21-1 3.68-1 4.42 0 .66.13 1.63.4 2.92a3.17 3.17 0 0 1-3.1 3.83 3.17 3.17 0 0 1-3.12-3.83c.28-1.29.41-2.26.41-2.92 0-.74-.34-2.2-1.02-4.42A3.89 3.89 0 0 1 9.3 5.4z' transform='rotate(45 9.29 13.5)'/%3E%3C/g%3E%3Cg transform='rotate(-35 1591.812 -807.843)'%3E%3Cpath fill='%23FFFFFF' d='M15.24 2.9a3.89 3.89 0 0 1-.93 6.19c-2.04 1.08-3.33 1.88-3.85 2.4a15.6 15.6 0 0 0-1.78 2.36 3.17 3.17 0 0 1-4.9.5 3.17 3.17 0 0 1 .51-4.9 15.6 15.6 0 0 0 2.36-1.78c.52-.52 1.32-1.8 2.4-3.84a3.89 3.89 0 0 1 6.19-.93z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M9.3 5.4a3.89 3.89 0 0 1 3.7 5.03c-.67 2.21-1 3.68-1 4.42 0 .66.13 1.63.4 2.92a3.17 3.17 0 0 1-3.1 3.83 3.17 3.17 0 0 1-3.12-3.83c.28-1.29.41-2.26.41-2.92 0-.74-.34-2.2-1.02-4.42A3.89 3.89 0 0 1 9.3 5.4z' transform='rotate(45 9.29 13.5)'/%3E%3C/g%3E%3Cg transform='rotate(-44 1287.793 -536.004)'%3E%3Cpath fill='%23FFFFFF' d='M15.24 2.9a3.89 3.89 0 0 1-.93 6.19c-2.04 1.08-3.33 1.88-3.85 2.4a15.6 15.6 0 0 0-1.78 2.36 3.17 3.17 0 0 1-4.9.5 3.17 3.17 0 0 1 .51-4.9 15.6 15.6 0 0 0 2.36-1.78c.52-.52 1.32-1.8 2.4-3.84a3.89 3.89 0 0 1 6.19-.93z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M9.3 5.4a3.89 3.89 0 0 1 3.7 5.03c-.67 2.21-1 3.68-1 4.42 0 .66.13 1.63.4 2.92a3.17 3.17 0 0 1-3.1 3.83 3.17 3.17 0 0 1-3.12-3.83c.28-1.29.41-2.26.41-2.92 0-.74-.34-2.2-1.02-4.42A3.89 3.89 0 0 1 9.3 5.4z' transform='rotate(45 9.29 13.5)'/%3E%3C/g%3E%3Cg transform='rotate(-28 1831.874 -1151.097)'%3E%3Cpath fill='%23FFFFFF' d='M15.24 2.9a3.89 3.89 0 0 1-.93 6.19c-2.04 1.08-3.33 1.88-3.85 2.4a15.6 15.6 0 0 0-1.78 2.36 3.17 3.17 0 0 1-4.9.5 3.17 3.17 0 0 1 .51-4.9 15.6 15.6 0 0 0 2.36-1.78c.52-.52 1.32-1.8 2.4-3.84a3.89 3.89 0 0 1 6.19-.93z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M9.3 5.4a3.89 3.89 0 0 1 3.7 5.03c-.67 2.21-1 3.68-1 4.42 0 .66.13 1.63.4 2.92a3.17 3.17 0 0 1-3.1 3.83 3.17 3.17 0 0 1-3.12-3.83c.28-1.29.41-2.26.41-2.92 0-.74-.34-2.2-1.02-4.42A3.89 3.89 0 0 1 9.3 5.4z' transform='rotate(45 9.29 13.5)'/%3E%3C/g%3E%3Cg transform='rotate(-41 1316.639 -621.138)'%3E%3Cpath fill='%23FFFFFF' d='M13.54 2.58a3.46 3.46 0 0 1-.82 5.5A17.18 17.18 0 0 0 9.3 10.2c-.41.42-.94 1.12-1.58 2.1a2.82 2.82 0 0 1-4.36.45 2.82 2.82 0 0 1 .45-4.36c.99-.64 1.68-1.17 2.1-1.58.46-.46 1.17-1.6 2.13-3.42a3.46 3.46 0 0 1 5.5-.82z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M8.26 4.8a3.46 3.46 0 0 1 3.3 4.47c-.6 1.97-.9 3.27-.9 3.93 0 .59.12 1.45.36 2.6a2.82 2.82 0 0 1-2.76 3.4 2.82 2.82 0 0 1-2.76-3.4c.24-1.15.36-2.01.36-2.6 0-.66-.3-1.96-.9-3.93a3.46 3.46 0 0 1 3.3-4.47z' transform='rotate(45 8.258 12)'/%3E%3C/g%3E%3Cg transform='rotate(-41 1286.706 -646.924)'%3E%3Cpath fill='%23FFFFFF' d='M11.85 2.26a3.03 3.03 0 0 1-.72 4.8 15.04 15.04 0 0 0-3 1.88c-.35.36-.82.97-1.38 1.83a2.47 2.47 0 0 1-3.8.4 2.47 2.47 0 0 1 .39-3.82C4.2 6.8 4.8 6.33 5.17 5.97c.4-.4 1.03-1.4 1.87-3a3.03 3.03 0 0 1 4.81-.71z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M7.23 4.2a3.03 3.03 0 0 1 2.89 3.91c-.53 1.72-.8 2.87-.8 3.44 0 .51.11 1.27.32 2.27a2.47 2.47 0 0 1-2.41 2.98 2.47 2.47 0 0 1-2.42-2.98c.21-1 .32-1.76.32-2.27 0-.57-.27-1.72-.8-3.44a3.03 3.03 0 0 1 2.9-3.91z' transform='rotate(45 7.226 10.5)'/%3E%3C/g%3E%3Cg transform='rotate(-24 2011.85 -1427.831)'%3E%3Cpath fill='%23FFFFFF' d='M13.54 2.58a3.46 3.46 0 0 1-.82 5.5A17.18 17.18 0 0 0 9.3 10.2c-.41.42-.94 1.12-1.58 2.1a2.82 2.82 0 0 1-4.36.45 2.82 2.82 0 0 1 .45-4.36c.99-.64 1.68-1.17 2.1-1.58.46-.46 1.17-1.6 2.13-3.42a3.46 3.46 0 0 1 5.5-.82z' opacity='.6'/%3E%3Cpath fill='url(%23j)' d='M8.26 4.8a3.46 3.46 0 0 1 3.3 4.47c-.6 1.97-.9 3.27-.9 3.93 0 .59.12 1.45.36 2.6a2.82 2.82 0 0 1-2.76 3.4 2.82 2.82 0 0 1-2.76-3.4c.24-1.15.36-2.01.36-2.6 0-.66-.3-1.96-.9-3.93a3.46 3.46 0 0 1 3.3-4.47z' transform='rotate(45 8.258 12)'/%3E%3C/g%3E%3Ccircle cx='756' cy='209' r='110' fill='%23FFFFFF' opacity='.2'/%3E%3Ccircle cx='859' cy='139' r='40' fill='%23FFFFFF' opacity='.2'/%3E%3Ccircle cx='551' cy='383' r='70' fill='%23FFFFFF' opacity='.2'/%3E%3Ccircle cx='666' cy='359' r='30' fill='%23FFFFFF' opacity='.2'/%3E%3Crect width='60' height='6' x='722' y='547' fill='%23FFFFFF' opacity='.4' rx='3'/%3E%3Crect width='60' height='6' x='842' y='565' fill='%23FFFFFF' opacity='.4' rx='3'/%3E%3Crect width='40' height='6' x='762' y='559' fill='%23FFFFFF' opacity='.4' rx='3'/%3E%3Crect width='40' height='6' x='872' y='553' fill='%23FFFFFF' opacity='.4' rx='3'/%3E%3Crect width='40' height='6' x='811' y='547' fill='%23FFFFFF' opacity='.4' rx='3'/%3E%3C/g%3E%3C/svg%3E");
+      /*  */
+    }
+
+    /*  */
+
+    @media (min-width: 768px) {
+      main {
+        flex-direction: row;
+      }
+
+      main .left, main .right {
+        width: 50%;
+      }
+
+      main .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main .left .container .code {
+        font-size: 9rem;
+      }
+
+      main .left .container .space {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      main .left .container .description {
+        font-size: 1.875rem;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+
+      main .right {
+        display: flex;
+        padding-bottom: 0;
+        min-height: 100vh;
+      }
+
+      main .right .container {
+        background-position: left;
+      }
+    }
+
+    @media (min-width: 992px) {
+      main .right .container {
+        background-position: center;
+      }
+    }
+  </style>
 </head>
-
-<body class="sticky-header">
-    
-    <a href="#main-wrapper" id="backto-top" class="back-to-top">
-        <i class="far fa-angle-double-up"></i>
-    </a>
-
-    <!-- Preloader Start Here -->
-    <div id="preloader"></div>
-    <!-- Preloader End Here -->
-
-    <div class="my_switcher d-none d-lg-block">
-        <ul>
-            <li title="Light Mode">
-                <a href="javascript:void(0)" class="setColor light" data-theme="light">
-                    <i class="fal fa-lightbulb-on"></i>
-                </a>
-            </li>
-            <li title="Dark Mode">
-                <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
-                    <i class="fas fa-moon"></i>
-                </a>
-            </li>
-        </ul>
+<body>
+<main>
+  <div class="left">
+    <div class="container">
+      <div class="code">505</div>
+      <div class="space"></div>
+      <p class="description" data-l10n="">We've been on a little hiatus, but guess what? We're making a comeback in just a couple of days with a surprise twist! 🎉 Get ready for some fun and exciting rephrases coming your way! 🚀😄</p>
+      <!--  -->
     </div>
+  </div>
+  <div class="right">
+    <div class="container"></div>
+  </div>
+</main>
 
-    <div id="main-wrapper" class="main-wrapper">
-
-        <!--=====================================-->
-        <!--=        Header Area Start       	=-->
-        <!--=====================================-->
-        <header class="header axil-header header-style-1">
-            <div id="axil-sticky-placeholder"></div>
-            <div class="axil-mainmenu">
-                <div class="container">
-                    <div class="header-navbar">
-                        <div class="header-logo">
-                          <a href="index-1.html"><img class="light-version-logo" src="assets/media/logo.png" alt="logo"></a> 
-                         
-                            <a href="index-1.html"><img class="dark-version-logo" src="assets/media/logo-3.png" alt="logo"></a>
-                            <a href="index-1.html"><img class="sticky-logo" src="assets/media/logo-2.png" alt="logo"></a>
-                        </div>
-                        <div class="header-main-nav">
-                            <!-- Start Mainmanu Nav -->
-                            <nav class="mainmenu-nav" id="mobilemenu-popup">
-                                <div class="d-block d-lg-none">
-                                    <div class="mobile-nav-header">
-                                        <div class="mobile-nav-logo">
-                                            <a href="index-1.html">
-                                                <img class="light-mode" src="assets/media/logo-2.png" alt="Site Logo">
-                                                <img class="dark-mode" src="assets/media/logo-3.png" alt="Site Logo">
-                                            </a>
-                                        </div>
-                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
-                                    </div>
-                                </div>
-                                <ul class="mainmenu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="portfolio.html">MegAI</a></li>
-                                    <li><a href="about-us.html">About</a></li>                                    
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                            <!-- End Mainmanu Nav -->
-                        </div>
-                        <div class="header-action">
-                            <ul class="list-unstyled">
-                                <li class="sidemenu-btn d-lg-block d-none">
-                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </li>
-                                <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
-                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </li>
-                                <li class="my_switcher d-block d-lg-none">
-                                    <ul>
-                                        <li title="Light Mode">
-                                            <a href="javascript:void(0)" class="setColor light" data-theme="light">
-                                                <i class="fal fa-lightbulb-on"></i>
-                                            </a>
-                                        </li>
-                                        <li title="Dark Mode">
-                                            <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
-                                                <i class="fas fa-moon"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--=====================================-->
-        <!--=        Banner Area Start         =-->
-        <!--=====================================-->
-        <section class="banner banner-style-1">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="banner-content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
-                            <h1 class="title">Welcome to Team Meg Corporation!</h1>
-                            <span class="subtitle">Team Meg Corporation, headquartered in Pakistan, is an esteemed organization with a focus on providing cutting-edge solutions and services in the field of Artificial Intelligence (AI).</span>
-                            <a href="404.html" class="axil-btn btn-fill-primary btn-large">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="banner-thumbnail">
-                            <div class="large-thumb" data-sal="zoom-in" data-sal-duration="500" data-sal-delay="300">
-                                <img src="assets/media/banner/laptop.png" alt="Laptop">
-                            </div>
-                            <ul class="list-unstyled shape-group">
-                                <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="400">
-                                    <img src="assets/media/banner/marker.png" alt="Marker">
-                                </li>
-                                <li class="shape shape-2" data-sal="slide-right" data-sal-duration="500" data-sal-delay="500">
-                                    <img src="assets/media/banner/chat-icon.png" alt="Chat">
-                                </li>
-                                <li class="shape shape-3" data-sal="slide-left" data-sal-duration="500" data-sal-delay="600">
-                                    <img src="assets/media/banner/sticker.png" alt="sticker">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="list-unstyled shape-group-13">
-                <li class="shape shape-1" data-sal="slide-down" data-sal-duration="500" data-sal-delay="100">
-                    <img src="assets/media/others/bubble-18.png" alt="Bubble">
-                </li>
-                <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
-                    <img src="assets/media/others/bubble-19.png" alt="Bubble">
-                </li>
-                <li class="shape shape-3" data-sal="slide-left" data-sal-duration="500" data-sal-delay="700">
-                    <img src="assets/media/others/hand-2.png" alt="Hand">
-                </li>
-                <li class="shape shape-4" data-sal="slide-left" data-sal-duration="500" data-sal-delay="700">
-                    <img src="assets/media/others/bubble-14.png" alt="Bubble">
-                </li>
-                <li class="shape shape-5" data-sal="slide-left" data-sal-duration="500" data-sal-delay="700">
-                    <img src="assets/media/others/bubble-14.png" alt="Bubble">
-                </li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=        Service Area Start         =-->
-        <!--=====================================-->
-        <section class="section section-padding-equal bg-color-dark">
-            <div class="container">
-                <div class="section-heading heading-light-left">
-                    <span class="subtitle">What We Can Do For Y</span>
-                    <h2 class="title">Services we can help you with</h2>
-                    <p class="opacity-50">Our Team comprises of developers, software engineers and digital marketers, making our services diverse and exceptional</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                        <div class="services-grid active">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-1.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="service-design.html">Artificial-Intelligence</a></h5>
-                                <p>In a crowded market, we excel at positioning your business with expertise in AI technology, helping you stand out effectively...</p>
-                                <a href="service-design.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                        <div class="services-grid">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-2.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="service-development.html">Cyber-Security</a></h5>
-                                <p>We pride ourselves on providing exceptional cybersecurity services, ensuring that your digital assets are safeguarded with the highest level of protection and vigilance...</p>
-                                <a href="service-development.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                        <div class="services-grid">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-3.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="service-marketing.html">API Development</a></h5>
-                                <p>Develop Powerful backend API (application programming interface) for our software business model or idea,......</p>
-                                <a href="service-marketing.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                        <div class="services-grid">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-4.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="service-business.html">UI/UX Design</a></h5>
-                                <p>We deliver cutting-edge UI/UX designs that elevate user experiences, blending modern aesthetics with seamless functionality to captivate your audience.</p>
-                                <a href="service-business.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                        <div class="services-grid">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-5.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="service-technology.html">Software Development</a></h5>
-                                <p>We specialize in crafting user-friendly software solutions, tailored to enhance efficiency and simplify the user experience, demonstrating our expertise in user-centric development....</p>
-                                <a href="service-technology.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                        <div class="services-grid">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-6.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="service-content-strategy.html">Top-No</a></h5>
-                                <p>Our team of digital marketers will help you drive sales using various digital platform and bring those targeted cutomers right to your page.........</p>
-                                <a href="service-content-strategy.html" class="more-btn">Find out more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="list-unstyled shape-group-10">
-                <li class="shape shape-1"><img src="assets/media/others/circle-1.png" alt="Circle"></li>
-                <li class="shape shape-2"><img src="assets/media/others/line-3.png" alt="Circle"></li>
-                <li class="shape shape-3"><img src="assets/media/others/bubble-5.png" alt="Circle"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=       Case Study Area Start       =-->
-        <!--=====================================-->
-        <section class="section section-padding-equal case-study-featured-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-6" data-sal="slide-right" data-sal-duration="800">
-                        <div class="slick-slider slick-dot-nav featured-content" data-slick='{"infinite": true,"arrows": false, "dots": true, "slidesToShow": 1, "asNavFor": ".featured-thumbnail"}'>
-                            <div class="slick-slide">
-                                <div class="case-study-featured">
-                                    <div class="section-heading heading-left">
-                                        <span class="subtitle">Featured Case Study</span>
-                                        <h2 class="title">Branding &amp; web design for sheffa</h2>
-                                        <p>Sheffa is an information and entertainment hub.They bring all kinds of interesting stuff to you from fashion to news, lifestyle and arts – all in one. Read, Learn and Enjoy</p>
-                                        <p>Basically they were using wordpress cms and they wanted more features and a good UI for their writters and readers</p>
-                                        <a href="single-case-study.html" class="axil-btn btn-fill-primary btn-large">Read Case Study</a>
-                                    </div>
-                                    <div class="case-study-counterup">
-                                        <div class="single-counterup">
-                                            <h2 class="count-number">
-                                                <span class="number count">15</span>
-                                                <span class="symbol">%</span>
-                                            </h2>
-                                            <span class="counter-title">ROI increase</span>
-                                        </div>
-                                        <div class="single-counterup">
-                                            <h2 class="count-number">
-                                                <span class="number count">60</span>
-                                                <span class="symbol">k</span>
-                                            </h2>
-                                            <span class="counter-title">Monthly website visits</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide">
-                                <div class="case-study-featured">
-                                    <div class="section-heading heading-left">
-                                        <span class="subtitle">Featured Case Study</span>
-                                        <h2 class="title">Web development & Branding for Zuarate Farms</h2>
-                                        <p>Zuarate Farms is a premiere one-stop shop for live animals – from cows to goats, rams, chickens and snails. Our livestock is fed with grass and sustainable spent grain – never compromising our gold standard as the custodians of livestock. We sell, slaughter, clean and deliver livestock to locations across Lagos.</p>
-                                        <p>Zuarate farms wanted an online presesnce that breached the gap between them and their customers</p>
-                                        <a href="single-case-study.html" class="axil-btn btn-fill-primary btn-large">Read Case Study</a>
-                                    </div>
-                                    <div class="case-study-counterup">
-                                        <div class="single-counterup">
-                                            <h2 class="count-number">
-                                                <span class="number count">15</span>
-                                                <span class="symbol">%</span>
-                                            </h2>
-                                            <span class="counter-title">ROI increase</span>
-                                        </div>
-                                        <div class="single-counterup">
-                                            <h2 class="count-number">
-                                                <span class="number count">60</span>
-                                                <span class="symbol">k</span>
-                                            </h2>
-                                            <span class="counter-title">Monthly website visits</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide">
-                                <div class="case-study-featured">
-                                    <div class="section-heading heading-left">
-                                        <span class="subtitle">Featured Case Study</span>
-                                        <h2 class="title">Ecommerce Solution for Phone4U LTD</h2>
-                                        <p>Phone4U LTD is an online store for your Gadget and acessories, a big dealer who specializes in selling phones, internet modern and decoders, they wanted ecommerce web application for their business</p>
-                                        <p>They wanted an ecommerce solution their store and we brought simplicity and automation to the game</p>
-                                        <a href="single-case-study.html" class="axil-btn btn-fill-primary btn-large">Read Case Study</a>
-                                    </div>
-                                    <div class="case-study-counterup">
-                                        <div class="single-counterup">
-                                            <h2 class="count-number">
-                                                <span class="number count">15</span>
-                                                <span class="symbol">%</span>
-                                            </h2>
-                                            <span class="counter-title">ROI increase</span>
-                                        </div>
-                                        <div class="single-counterup">
-                                            <h2 class="count-number">
-                                                <span class="number count">60</span>
-                                                <span class="symbol">k</span>
-                                            </h2>
-                                            <span class="counter-title">Monthly website visits</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-6 d-none d-lg-block" data-sal="slide-left" data-sal-duration="800">
-                        <div class="slick-slider slick-dot-nav featured-thumbnail" data-slick='{"infinite": true,"arrows": false, "dots": false, "fade": true, "slidesToShow": 1, "asNavFor": ".featured-content"}'>
-                            <div class="slick-slide">
-                                <div class="case-study-featured-thumb">
-                                    <img src="assets/media/others/case-study-4.png" alt="travel">
-                                </div>
-                            </div>
-                            <div class="slick-slide">
-                                <div class="case-study-featured-thumb">
-                                    <img src="assets/media/others/case-study-5.png" alt="travel">
-                                </div>
-                            </div>
-                            <div class="slick-slide">
-                                <div class="case-study-featured-thumb">
-                                    <img src="assets/media/others/case-study-6.png" alt="travel">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=====================================-->
-        <!--=        About Area Start         =-->
-        <!--=====================================-->
-        <section class="section section-padding-equal bg-color-light">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6" data-sal="slide-up" data-sal-duration="800">
-                        <div class="about-us">
-                            <div class="section-heading heading-left mb-0">
-                                <span class="subtitle">About Us</span>
-                                <h2 class="title mb--40">Crafting the Future with Expert AI.</h2>
-                                <p>At Team Meg, we excel in AI, pioneering innovation for transformative solutions. Our passionate experts drive cutting-edge advancements, elevating businesses worldwide.</p>
-                                <p>Join us on the journey to shape a smarter, AI-driven future today, and together, let's create a world where the possibilities are limitless.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-6 offset-xl-1" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                        <div class="contact-form-box">
-                            <h3 class="title">Need Help?</h3>
-                            <form method="POST" action="mail.php" class="axil-contact-form">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" name="contact-name" placeholder="Elon Musk">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" name="contact-email" placeholder="example@mail.com">
-                                </div>
-                                <div class="form-group mb--40">
-                                    <label>Phone</label>
-                                    <input type="tel" class="form-control" name="contact-company" placeholder="+123456789">
-                                </div>
-                              <head>
-                                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
-                              </head>
-                              <body>
-                                  <button type="button" class="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn" id="toast-button">Push to us</button>
-
-                                  <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                      <div class="toast-header">
-                                          <strong class="me-auto">Delivered!</strong>
-                                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                      </div>
-                                      <div class="toast-body">
-                                          Our Team will Respond You Soon!
-                                      </div>
-                                  </div>
-
-                                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-                                  <script>
-                                      document.getElementById("toast-button").addEventListener("click", function() {
-                                          var toast = new bootstrap.Toast(document.getElementById('myToast'), {
-                                              animation: true,
-                                              delay: 3000
-                                          });
-                                          toast.show();
-                                      });
-                                  </script>
-                              </body>
-                                </div>
-                                <input type="hidden" class="form-control" name="contact-message" value="Null">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-6 list-unstyled">
-                <li class="shape shape-1"><img src="assets/media/others/bubble-7.png" alt="Bubble"></li>
-                <li class="shape shape-2"><img src="assets/media/others/line-4.png" alt="line"></li>
-                <li class="shape shape-3"><img src="assets/media/others/line-5.png" alt="line"></li>
-            </ul>
-        </section>
-       
-        <!--=====================================-->
-        <!--=        Counter Up Area Start      =-->
-        <!--=====================================-->
-        <section class="section section-padding bg-color-dark">
-            <div class="container">
-                <div class="section-heading heading-light">
-                    <span class="subtitle">Featured Case Study</span>
-                    <h2 class="title">Design Social Engagement Webapp</h2>
-                    <p>A social engagement app with the feel of twitter #Naijatalk, a web based forum to discuss and talk about things happening in real time.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                        <div class="counterup-progress active">
-                            <div class="icon">
-                                <img src="assets/media/icon/icon-7.png" alt="Apple">
-                            </div>
-                            <div class="count-number h2">
-                                <span class="number count">40</span>
-                                <span class="symbol">+</span>
-                            </div>
-                            <h6 class="title">Happy Customers</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                        <div class="counterup-progress">
-                            <div class="icon">
-                                <img src="assets/media/icon/icon-8.png" alt="Apple">
-                            </div>
-                            <div class="count-number h2">
-                                <span class="number count">27</span>
-                                <span class="symbol">+</span>
-                            </div>
-                            <h6 class="title">Projects delivered</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                        <div class="counterup-progress">
-                            <div class="icon">
-                                <img src="assets/media/icon/icon-9.png" alt="Apple">
-                            </div>
-                            <div class="count-number h2">
-                                <span class="number count">10</span>
-                                <span class="symbol">+</span>
-                            </div>
-                            <h6 class="title">Specialist</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
-                        <div class="counterup-progress">
-                            <div class="icon">
-                                <img src="assets/media/icon/apple.png" alt="Apple">
-                            </div>
-                            <div class="count-number h2">
-                                <span class="number count">4</span>
-                                <span class="symbol">+</span>
-                            </div>
-                            <h6 class="title">Years of operation</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-5 list-unstyled">
-                <li class="shape shape-1"><img src="assets/media/others/circle-1.png" alt="line"></li>
-                <li class="shape shape-2"><img src="assets/media/others/line-3.png" alt="line"></li>
-                <li class="shape shape-3"><img src="assets/media/others/bubble-5.png" alt="line"></li>
-                <li class="shape shape-4"><img src="assets/media/others/bubble-6.png" alt="line"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=        Testimonial Area Start      =-->
-        <!--=====================================-->
-        <section class="section section-padding">
-            <div class="container">
-                <div class="section-heading heading-left">
-                    <span class="subtitle">Testimonial</span>
-                    <h2 class="title">What People that you know Said About us? </h2>
-                    <p>Look Below Some Big names also Know Team Meg Lets See What They Think About Us...</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
-                        <div class="testimonial-grid active">
-                            <span class="social-media"><img src="assets/media/icon/yelp-2.png" alt="Yelp"></span>
-                            <p>“I've had the privilege of working with Team Meg, and their level of professionalism is unmatched, delivering top-notch results every time.”</p>
-                            <div class="author-info">
-                                <div class="thumb">
-                                    <img src="assets/media/testimonial/testimonial-1.png" alt="Google Review">
-                                </div>
-                                <div class="content">
-                                    <span class="name">Darrell Steward</span>
-                                    <span class="designation">Executive Chairman</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
-                        <div class="testimonial-grid">
-                            <span class="social-media"><img src="assets/media/icon/google-2.png" alt="google"></span>
-                            <p>“Team Meg's utilization of Google's Bard AI model underscores their commitment to leveraging top-tier AI technologies in their products, demonstrating a strong dedication to innovation.”</p>
-                            <div class="author-info">
-                                <div class="thumb">
-                                    <img src="assets/media/testimonial/testimonial-2.png" alt="Google Review">
-                                </div>
-                                <div class="content">
-                                    <span class="name">Savannah Nguyen</span>
-                                    <span class="designation">Executive Manager cTO AI</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">
-                        <div class="testimonial-grid">
-                            <span class="social-media"><img src="assets/media/icon/fb-2.png" alt="Facebook"></span>
-                            <p>“Team Meg consistently showcases professionalism and innovation, earning recognition from Facebook for their impressive use of AI technologies in their projects.”</p>
-                            <div class="author-info">
-                                <div class="thumb">
-                                    <img src="assets/media/testimonial/testimonial-3.png" alt="Google Review">
-                                </div>
-                                <div class="content">
-                                    <span class="name">Floyd Miles</span>
-                                    <span class="designation">Manager Meta AI Affairs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-4 list-unstyled">
-                <li class="shape-1"><img src="assets/media/others/bubble-1.png" alt="Bubble"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=        Pricing Area Start       	=-->
-        <!--=====================================-->
-        
-        <!--=====================================-->
-        <!--=        Brand Area Start       	=-->
-        <!--=====================================-->
-        <section class="section section-padding bg-color-dark">
-            <div class="container">
-                <div class="section-heading heading-light-left">
-                    <span class="subtitle">Top Clients</span>
-                    <h2 class="title">We’ve built solutions for...</h2>
-                    <p>Design anything from simple icons to fully featured websites and applications.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500">
-                        <div class="brand-grid active">
-                            <img src="assets/media/brand/brand-1.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-2.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-3.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-4.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-5.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-6.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="600">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-7.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="700">
-                        <div class="brand-grid">
-                            <img src="assets/media/brand/brand-8.png" alt="Brand">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-2 list-unstyled">
-                <li class="shape shape-1"><img src="assets/media/others/circle-1.png" alt="circle"></li>
-                <li class="shape shape-2"><img src="assets/media/others/line-3.png" alt="circle"></li>
-                <li class="shape shape-3"><img src="assets/media/others/bubble-3.png" alt="circle"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=        Blog Area Start       	    =-->
-        <!--=====================================-->
-        <section class="section section-padding-equal">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="subtitle">What's Going On</span>
-                    <h2 class="title">Latest stories</h2>
-                    <p>Important Updates from Team Meg's Side Lets Discover it;</p>
-                </div>
-                <div class="row g-0">
-                    <div class="col-xl-6" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
-                        <div class="blog-list active">
-                            <div class="post-thumbnail">
-                                <a href="single-blog-2.html"><img src="assets/media/blog/blog-1.png" alt="Blog Post"></a>
-                            </div>
-                            <div class="post-content">
-                                <h5 class="title"><a href="single-blog-2.html">Team Meg's Earn ISO 9001 Certification.</a></h5>
-                                <p>At Team Meg, we've achieved ISO 9001 certification, underscoring our drive to consistently meet and exceed international AI standards, ensuring quality and excellence in our work.....</p>
-                                <a href="single-blog-2.html" class="more-btn">Learn more<i class="far fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
-                        <div class="blog-list border-start">
-                            <div class="post-thumbnail">
-                                <a href="single-blog-3.html"><img src="assets/media/blog/blog-2.png" alt="Blog Post"></a>
-                            </div>
-                            <div class="post-content">
-                                <h5 class="title"><a href="single-blog-3.html">Team Meg Corporation X Microsoft.Inc</a></h5>
-                                <p>Team Meg is proud to partner with industry leader Microsoft, working together to leverage their expertise and resources for the benefit of our clients and AI advancements...</p>
-                                <a href="single-blog-3.html" class="more-btn">Learn more<i class="far fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-1 list-unstyled">
-                <li class="shape shape-1"><img src="assets/media/others/bubble-1.png" alt="bubble"></li>
-                <li class="shape shape-2"><img src="assets/media/others/line-1.png" alt="bubble"></li>
-                <li class="shape shape-3"><img src="assets/media/others/line-2.png" alt="bubble"></li>
-                <li class="shape shape-4"><img src="assets/media/others/bubble-2.png" alt="bubble"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=     Call To Action Area Start     =-->
-        <!--=====================================-->
-        <section class="section call-to-action-area">
-            <div class="container">
-                <div class="call-to-action">
-                    <div class="section-heading heading-light">
-                        <span class="subtitle">Want a Collab or need our Services?</span>
-                        <h2 class="title">Team Meg is Always Ready to Serve You.</h2>
-                        <a href="contact.html" class="axil-btn btn-large btn-fill-white">Lets Catch Up🤝</a>
-                    </div>
-                    <div class="thumbnail">
-                        <div class="larg-thumb" data-sal="zoom-in" data-sal-duration="600" data-sal-delay="100">
-                            <img src="assets/media/others/pc.png" alt="Computer">
-                        </div>
-                        <ul class="list-unstyled small-thumb">
-                            <li class="shape shape-1" data-sal="slide-right" data-sal-duration="800" data-sal-delay="400">
-                                <img src="assets/media/others/comment.png" alt="Comments">
-                            </li>
-                            <li class="shape shape-2" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                                <img src="assets/media/others/keyboard.png" alt="Comments">
-                            </li>
-                            <li class="shape shape-3" data-sal="slide-right" data-sal-duration="800" data-sal-delay="300">
-                                <img src="assets/media/others/mouse.png" alt="Comments">
-                            </li>
-                            <li class="shape shape-4" data-sal="slide-left" data-sal-duration="800" data-sal-delay="300">
-                                <img src="assets/media/others/bell-icon.png" alt="Comments">
-                            </li>
-                            <li class="shape shape-5" data-sal="zoom-in" data-sal-duration="800" data-sal-delay="200">
-                                <img src="assets/media/others/chat-bot.png" alt="Comments">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <ul class="list-unstyled shape-group-9">
-                <li class="shape shape-1"><img src="assets/media/others/bubble-12.png" alt="Comments"></li>
-                <li class="shape shape-2"><img src="assets/media/others/bubble-16.png" alt="Comments"></li>
-                <li class="shape shape-3"><img src="assets/media/others/bubble-13.png" alt="Comments"></li>
-                <li class="shape shape-4"><img src="assets/media/others/bubble-14.png" alt="Comments"></li>
-                <li class="shape shape-5"><img src="assets/media/others/bubble-16.png" alt="Comments"></li>
-                <li class="shape shape-6"><img src="assets/media/others/bubble-15.png" alt="Comments"></li>
-                <li class="shape shape-7"><img src="assets/media/others/bubble-16.png" alt="Comments"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=        Footer Area Start       	=-->
-        <!--=====================================-->
-        <footer class="footer-area">
-            <div class="container">
-                <div class="footer-top">
-                    <div class="footer-social-link">
-                        <ul class="list-unstyled">
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-main">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-5" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
-                            <div class="footer-widget border-end">
-                                <div class="footer-newsletter">
-                                    <h2 class="title">Get in touch!</h2>
-                                    <p>Our Team of expert designers and engineers will help you build powerful tools to drive impact and help you achieve your goals</p>
-                                    <form>
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Email address">
-                                            <button class="subscribe-btn" type="submit">Subscribe</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="footer-widget">
-                                        <h6 class="widget-title">Our Products!</h6>
-                                        <div class="footer-menu-link">
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">MegAI</a></li>
-                                                <li><a href="$">SharkScript(beta)</a></li>
-                                                <li><a href="#">PixelX</a></li>
-                                                <li><a href="#">TheMegSaga</a></li>
-                                                <li><a href="#">ReachIO</a></li>
-                                                <li><a href="#">Imagify</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="footer-widget">
-                                        <h6 class="widget-title">Resourses</h6>
-                                        <div class="footer-menu-link">
-                                            <ul class="list-unstyled">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="case-study.html">Case Studies</a></li>
-                                                <li><a href="project.html">Portfolio</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="footer-widget">
-                                        <h6 class="widget-title">Support</h6>
-                                        <div class="footer-menu-link">
-                                            <ul class="list-unstyled">
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                <li><a href="terms-of-use.html">Terms of Use</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="footer-copyright">
-                                <span class="copyright-text">© 2023. All rights reserved by <a href="#">Dot Meg Media Republic-Team Meg Corporation-ISO 9001 Certified</a>.</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="footer-bottom-link">
-                                <ul class="list-unstyled">
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-of-use.html">Terms of Use</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<script>
+  // 
+  if (navigator.language.substring(0, 2).toLowerCase() !== 'en') {
+    ((s, p) => { // localize the page (details here - https://github.com/tarampampam/error-pages/tree/master/l10n)
+      s.src = 'https://cdn.jsdelivr.net/gh/tarampampam/error-pages@2/l10n/l10n.min.js'; // '../l10n/l10n.js';
+      s.async = s.defer = true;
+      s.addEventListener('load', () => p.removeChild(s));
+      p.appendChild(s);
+    })(document.createElement('script'), document.body);
+  }
+  // 
+</script>
 
 
 
-
-        <!--=====================================-->
-        <!--=       Offcanvas Menu Area       	=-->
-        <!--=====================================-->
-        <div class="offcanvas offcanvas-end header-offcanvasmenu" tabindex="-1" id="offcanvasMenuRight">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <form action="#" class="side-nav-search-form">
-                    <div class="form-group">
-                        <input type="text" class="search-field" name="search-field" placeholder="Search...">
-                        <button class="side-nav-search-btn"><i class="fas fa-search"></i></button>
-                    </div>
-                </form>
-                <div class="row ">
-                    <div class="col-lg-5 col-xl-6">
-                        <ul class="main-navigation list-unstyled">
-                            <li><a href="index-1.html"></a></li>
-                            <li><a href="index-2.html">Branding</a></li>
-                            <li><a href="index-3.html">Web-sites</a></li>
-                            <li><a href="index-4.html">Mobile Apps</a></li>
-                            <li><a href="index-5.html">Digital Marketing</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-7 col-xl-6">
-                        <div class="contact-info-wrap">
-                            <div class="contact-inner">
-                                <address class="address">
-                                    <span class="title">Contact Information</span>
-                                    <p>Lagos,<br>Nigeria.</p>
-                                </address>
-                                <address class="address">
-                                    <span class="title">We're Available 24/7. Call Now.</span>
-                                    <a class="tel" href="tel:+2348026691861"><i class="fas fa-phone"></i>(234)
-                                        802-669-1861</a>
-                                    <a class="tel" href="tel:+2348109957139"><i class="fas fa-fax"></i>(234)
-                                        810-995-7139</a>
-                                </address>
-                            </div>
-                            <div class="contact-inner">
-                                <h5 class="title">Find us here</h5>
-                                <div class="contact-social-share">
-                                    <ul class="social-share list-unstyled">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Jquery Js -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
-    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/vendor/waypoints.min.js"></script>
-    <script src="assets/js/vendor/counterup.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/sal.js"></script>
-    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/vendor/js.cookie.js"></script>
-    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
-    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
-    <script src="assets/js/vendor/tilt.js"></script>
-    <script src="assets/js/vendor/green-audio-player.min.js"></script>
-    <script src="assets/js/vendor/jquery.nav.js"></script>
-
-    <!-- Site Scripts -->
-    <script src="assets/js/app.js"></script>
-  <!-- Url Rewriting Script -->
-   <script src="url_rewrite/index.js"></script>
-</body>
-
-</html>
+</body><!--
+    Error 505: HTTP Version Not Supported
+    Description: The server does not support the "http protocol" version
+--></html>
