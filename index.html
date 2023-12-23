@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatic Repair</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+
+    header img {
+      max-width: 100%;
+      max-height: 200px;
+      margin-bottom: 10px;
+    }
+
+    #repair-container {
+      text-align: center;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+      width: 70%;
+    }
+
+    #repair-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #progress-bar-container {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #555;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    #progress-bar {
+      width: 32%;
+      height: 15px;
+      background-color: #2ecc71;
+      text-align: center;
+      line-height: 15px;
+      color: #fff;
+      border-radius: 5px;
+      animation: fillProgress 2s ease-in-out;
+    }
+
+    p {
+      color: #aaa;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      border-radius: 0 0 10px 10px;
+      width: 100%;
+    }
+
+    note {
+      color: #f00;
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fillProgress {
+      0% { width: 0; }
+      100% { width: 32%; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Server Can't Retrieve Info</h1>
-    <p>No Response Received From Server</p>
-    <p>Error 404: <code>http://teammeg.google.firebase.server001a.com1</code> failed</p>
-    <p>This error may be caused due to an overload on the server. Please contact the development team for more information.</p>
+  <header>
+    <img src="https://i.ibb.co/NLNLn11/20231222-231144-0000-removebg-preview.png" alt="Logo">
+  </header>
+
+  <div id="repair-container">
+    <div id="repair-text">Performing Automatic Repair</div>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    <p>Hang tight! Our AI is playfully fixing the server for you.</p>
+  </div>
+
+  <footer>
+    
+    <note>If the website doesn't return to normal after completion of repair, please contact info@teammeg.online or teammeg@google.com.</note>
+  </footer>
 </body>
 </html>
