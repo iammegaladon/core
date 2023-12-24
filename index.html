@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="assets/css/vendor/sal.css">
     <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
+      }
+
+  
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -67,19 +70,32 @@
     }
 
     #progress-bar {
-      width: 90%;
+      width: 100%;
       height: 15px;
-      background-color: #2ecc71;
+      background-color: #e74c3c; /* Red color */
       text-align: center;
       line-height: 15px;
       color: #fff;
       border-radius: 5px;
-      animation: fillProgress 2s ease-in-out;
+      animation: fillProgress 1s ease-in-out;
     }
 
     p {
       color: #aaa;
       margin-top: 20px;
+    }
+
+    #error-details {
+      color: #f00;
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    #auto-try {
+      color: #f00;
+      font-style: italic;
+      margin-top: 20px;
+      animation: blinkText 1s infinite;
     }
 
     footer {
@@ -101,8 +117,13 @@
     }
 
     @keyframes fillProgress {
-      0% { width: 0; }
-      100% { width: 90%; }
+      0% { width: 32%; }
+      100% { width: 100%; }
+    }
+
+    @keyframes blinkText {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
     }
   </style>
 </head>
@@ -112,16 +133,16 @@
   </header>
 
   <div id="repair-container">
-    <div id="repair-text">Performing Automatic Repair</div>
+    <div id="repair-text">Failed to Retrieve Server</div>
     <div id="progress-bar-container">
       <div id="progress-bar"></div>
     </div>
-    <p>Hang tight! Our AI is playfully fixing the server for you.</p>
+    <div id="error-details">Error Details: 01Xc Computing Failed TMc</div>
+    <div id="auto-try">Auto Try 2 in 50 Minutes</div>
   </div>
 
   <footer>
-    
-    <note>If the website doesn't return to normal after completion of repair, please contact info@teammeg.online or teammeg@google.com.</note>
+    <note>If the issue persists, please contact info@teammeg.online or teammeg@google.com.</note>
   </footer>
 </body>
 </html>
