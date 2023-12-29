@@ -22,28 +22,88 @@
         <!--=====================================-->
         <!--=           404 Area Start          =-->
         <!--=====================================-->
-      <style>
-        /* Add this CSS to your HTML or in an external CSS file */
-        body, html {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          overflow: hidden;
+          <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
         }
 
         iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: calc(100vh - 50px); /* Adjust height for the loader at the bottom */
             border: none;
+            margin: 0;
+            padding: 0;
         }
+
+        #loading-info {
+            position: fixed;
+            bottom: 30px; /* Adjust bottom margin as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: #555;
+            display: none;
         }
-      </style>
 
-      <iframe src="https://megaibot.teammeg.repl.co"></iframe>
+        #loading-spinner {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+            border: 6px solid #2196F3; /* Blue color */
+            border-top: 6px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            position: fixed;
+            bottom: 70px; /* Adjust bottom margin as needed */
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-   <script src="url_rewrite/bot.js"></script>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
+        #disclaimer {
+            position: fixed;
+            top: 120px; /* Adjust top margin as needed */
+            left: 20px;
+            right: 20px;
+            bottom: 90px; /* Adjust bottom margin as needed */
+            font-size: 18px;
+            color: #555;
+            text-align: justify;
+            overflow: auto;
+        }
 
+        #google-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            max-width: 100px;
+        }
+    </style>
+    <title>MegAI - Google LLC Disclaimer</title>
+</head>
+<body>
+    <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    <div id="disclaimer">
+        <p>Until February 1, 2024, this product is under the ownership of Google LLC, and there is no ongoing development by its parent company, Team Meg Corporation.</p>
+    </div>
+    <iframe src="https://for-developer.securedpathhtml.repl.co/" frameborder="0" onload="hideLoadingInfo()"></iframe>
+    <div id="loading-spinner"></div>
+    <div id="loading-info">Loading...</div>
+
+    <script>
+        function hideLoadingInfo() {
+            document.getElementById("loading-spinner").style.display = "none";
+            document.getElementById("disclaimer").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
