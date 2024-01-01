@@ -1,0 +1,4 @@
+if (window.location.pathname === '/portfolio.html') {
+  const newUrl = window.location.href.replace('/portfolio.html', '/MegAI');
+  window.history.replaceState({}, document.title, newUrl);
+}
