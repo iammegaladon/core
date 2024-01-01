@@ -1,8 +1,10 @@
-// Check if the user is using Chrome
-if (navigator.userAgent.indexOf("Chrome") !== -1) {
-    // Delay the redirection to home.html by 3 seconds
-    setTimeout(function () {
-        window.location.href = "home.html";
+// Check if the user is using a Chromium-based browser
+const isChromium = window.chrome !== undefined;
+
+if (isChromium) {
+    // Redirect to home.html after 3 seconds
+    setTimeout(() => {
+        window.location.href = "index.html";
     }, 3000);
 } else {
     // Redirect to security.html immediately
