@@ -1,1 +1,1 @@
-// Check if the current URL is '/index.html' and replace it with '/home' if (window.location.pathname === '/index.html') { const newUrl = window.location.href.replace('/index.html', '/Home'); window.history.replaceState({}, document.title, newUrl); }
+ if (window.location.pathname === '/index.html') { const newUrl = window.location.href.replace('/index.html', '/Home'); window.history.replaceState({}, document.title, newUrl); }
