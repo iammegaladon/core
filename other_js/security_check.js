@@ -1,12 +1,17 @@
-// Check if the user is using a Chromium-based browser
 const isChromium = window.chrome !== undefined;
 
 if (isChromium) {
-    // Redirect to home.html after 3 seconds
-    setTimeout(() => {
-        window.location.href = "index.html";
-    }, 3000);
+    // Check if not already redirected
+    if (!window.location.href.includes("index.html")) {
+        // Redirect to index.html after 3 seconds
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 3000);
+    }
 } else {
-    // Redirect to security.html immediately
-    window.location.href = "security.html";
+    // Check if not already redirected
+    if (!window.location.href.includes("security.html")) {
+        // Redirect to security.html immediately
+        window.location.href = "security.html";
+    }
 }
