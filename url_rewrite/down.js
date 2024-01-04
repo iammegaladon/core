@@ -1,0 +1,1 @@
+ if (window.location.pathname === '/down.html') { const newUrl = window.location.href.replace('/down.html', '/server?down'); window.history.replaceState({}, document.title, newUrl); }
